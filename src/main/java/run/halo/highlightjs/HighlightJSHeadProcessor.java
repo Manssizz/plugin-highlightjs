@@ -88,7 +88,7 @@ public class HighlightJSHeadProcessor implements TemplateHeadProcessor {
                         <script th:inline="javascript">
                         document.addEventListener("DOMContentLoaded", function () {
                             [# th:if="${config.showCopyButton}"]
-                                hljs.addPlugin(new CopyButtonPlugin({ lang: "zh"}));
+                                hljs.addPlugin(new CopyButtonPlugin({ lang: "en"}));
                             [/]
                             document.querySelectorAll("pre code").forEach((el) => {
                                 hljs.highlightElement(el);
