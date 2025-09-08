@@ -76,7 +76,7 @@ public class HighlightJSHeadProcessor implements TemplateHeadProcessor {
                 """
                         <!-- PluginHighlightJS start -->
                         <link th:href="|/plugins/PluginHighlightJS/assets/static/styles/${config.style}?version=${version}|" rel="stylesheet"/>
-                        <script defer th:src="|/plugins/PluginHighlightJS/assets/static/highlight.min.js?version=${version}|"></script>
+                        <script defer th:src="|https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js?version=${version}|"></script>
 
                         <th:block th:if="${config.showCopyButton}">
                             <link th:href="|/plugins/PluginHighlightJS/assets/static/plugins/highlightjs-copy.css?version=${version}|" rel="stylesheet"/>
