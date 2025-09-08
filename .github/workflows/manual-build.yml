@@ -2,7 +2,12 @@ name: Manual Build
 
 on:
   workflow_dispatch:
-
+  push:
+    branches:
+      - manual-workflow
+      - main
+      - bahasa-indonesia
+      - fix
 jobs:
   build:
     runs-on: ubuntu-latest
